@@ -1,0 +1,289 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0 75px 0 0px;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: "noyh", sans-serif;
+  background-color: #f3f4ee;
+  box-shadow: inset 0 50px 150px #9c9c96;
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+#button-div {
+  float: left;
+  height: 100%;
+  width: 15%;
+  /* background-color: bisque; */
+}
+
+#green-button {
+  margin: 25px auto 5px auto;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px 0 lightgrey;
+  background-image: linear-gradient(#bad7a4, #a1bb89);
+}
+#green-button:hover {
+  box-shadow: 0 0 10px 0 darkgoldenrod;
+  cursor: pointer;
+}
+
+#green-button img {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#button-div p {
+  margin-top: 0;
+  font-size: 0.75em;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.chart-card {
+  flex: none;
+  padding: 5px 10px;
+  position: relative;
+  width: 250px;
+  margin: 25px 2px;
+  background-color: white;
+  box-shadow: 0 2px 1px 0 lightgrey;
+  border-radius: 5px;
+}
+
+.card-header {
+  position: relative;
+  padding: 20px;
+}
+
+.card-header > h3 {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.pencil-box {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  height: 17px;
+  width: 18px;
+  overflow: hidden;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+.pencil-box img {
+  position: relative;
+  margin-top: -17px;
+}
+
+.pencil-box:hover img {
+  position: relative;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.mid-box {
+  background-color: #fbfbf6;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0 -10px;
+  border-bottom: solid 1px rgb(243, 241, 241);
+  border-top: solid 1px rgb(243, 241, 241);
+}
+
+.mid-box > * {
+  display: inline-block;
+}
+
+#pricing-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#pricing-name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 0.75em;
+}
+#middle-col {
+  width: 25%;
+}
+.light-text {
+  color: grey;
+  font-size: 0.75em;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.program-title {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+#bottom-table {
+  width: 85%;
+  border-collapse: collapse;
+  margin-left: 15%;
+}
+
+#bottom-table tbody tr:first-child td {
+  border-bottom: solid 1px lightgray;
+}
+
+#wide-col {
+  width: 60%;
+}
+
+.little-more {
+  font-size: 0.75em;
+}
+
+#bottom-table b {
+  font-size: 0.75em;
+}
+
+#bottom-table td {
+  vertical-align: justify;
+}
+
+.tab-panel p {
+  display: inline;
+}
+
+.tab-panel p:hover {
+  cursor: pointer;
+}
+
+#sub-tabs {
+  position: relative;
+  height: 45px;
+  width: 100vw;
+  background-color: white;
+}
+#sub-tabs div {
+  position: absolute;
+  left: 70px;
+  top: 12px;
+}
+#sub-tabs div p {
+  display: inline;
+  margin: 0 20px;
+}
+
+#sub-tabs p:hover {
+  cursor: pointer;
+}
+
+#sub-tabs .active {
+  font-weight: bold;
+}
+
+#banner-div {
+  height: 60px;
+  background-color: #ecf7f2;
+  width: 100vw;
+  position: relative;
+}
+
+#banner-div img {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+/*  */
+/* Copied the react-tabs css file from node modules so I could customize */
+/*  */
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  color: #799c8a;
+  background-image: linear-gradient(white, #f4f4ee);
+  padding: 6px 30px;
+  cursor: pointer;
+  text-shadow: 0.5px 0 0 currentColor;
+}
+
+.react-tabs__tab:not(:first-child):after {
+  content: "";
+  background: #ccc;
+  position: absolute;
+  bottom: 12.5%;
+  left: 0;
+  height: 75%;
+  width: 1px;
+}
+
+@media (max-width: 1100px) {
+  .react-tabs__tab {
+    padding: 6px 5px;
+  }
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: black;
+  box-shadow: 5px 5px 5px lightgrey;
+  border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
